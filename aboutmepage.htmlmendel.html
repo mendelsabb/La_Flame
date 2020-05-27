@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+    <html>
+    <head>
+        <script src="https://kit.fontawesome.com/178629f1f7.js"
+                crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="https://i.redd.it/t9a8j2f9xyl31.png">
+        <link rel="stylesheet" href="StyleSheet1.css" />
+        <link rel="stylesheet" href="StyleSheet-about.css" />
+        <title>Mendel_sabb</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                color: black;
+            }
+
+            .header {
+                background: linear-gradient(to right, #000000, #434343);
+                
+            }
+
+            ul {
+                background: linear-gradient(to right, #ADA996, #F2F2F2,#DBDBDB,#EAEAEA);
+            }
+
+
+            .ul-o {
+                font-size: 15px;
+            }
+           
+          
+
+            #dark {
+                position: absolute;
+                right: 3%;
+                top: 17%;
+                width: 2%;
+            }
+            #dark:hover{cursor:pointer;}
+        </style>
+        <script>
+            function changeImage() {
+                var img = document.getElementById("img-Me");
+
+                if (img.src.match("Mer.JPG")) {
+                    img.src = "popular-post.JPG";
+                } else {
+                    img.src = "Mer.JPG";
+                }
+            }
+
+        </script>
+
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("header");
+            }
+        </script>
+    </head>
+    <body>
+        <img src="https://cdn1.iconfinder.com/data/icons/user-interface-16x16-vol-1/16/contrast-circle-512.png" id="dark"    onclick="myFunction()" />
+       
+
+
+        <div class="header">
+            <h1>MENDEL WORLD</h1>
+
+        </div>
+
+        <div class="div-time">
+            <p id="demo"></p>
+            <p id="date"></p>
+        </div>
+        <script>
+
+            var d = new Date();
+        var Minutes = d.getMinutes();
+        if (Minutes < 10 && Minutes >= 0) { document.getElementById("demo").innerHTML = d.getHours() + ":0" + Minutes; }
+            else { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes; }
+            var hour = d.getHours();
+            if (hour > 0 && hour < 12) { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " AM"; }
+            else {document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " PM";}
+        </script>
+        <script>
+            var d = new Date();
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            document.getElementById("date").innerHTML = d.getDate() + "-" + months[d.getMonth()] + "-" + d.getFullYear();
+        </script>
+
+        <ul>
+            <li><a href="style.html1.html"><i class="fa fa-fw fa-home"></i>  HOME</a></li>
+            <li><a href="Albums-t.html"><i class="fas fa-compact-disc icon"></i>  ALBUMS</a></li>
+            <li><a href="Sneakers.htmlSneakers.html"><i class="fas fa-shoe-prints icon"></i>  SNEAKERS</a></li>
+            <li><a href="HTMLTravisScottSweetWear.html"><i class="fas fa-tshirt icon"></i>  STREETWEAR & COLLECTIBELS</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="drop">ABOUT</a>
+                <div class="dropdown-content">
+                    <a class="active" href="">Mendel.s</a>
+                    <a href="Travisscott.html">Travis.s</a>
+
+                </div>
+        </ul>
+
+       
+
+        <div>
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>SABBAGH FAMILY</h2>
+                    <h5>Greece Mykonos, August 23, 2019</h5>
+                   <img id="img-Family" src="family.JPG" />
+                   <p>Voici moi et ma famille sur l'île de Mykonos qui est en Grèce.</p>
+                   <p>Nous sommes 3 frères, 2 sœurs et moi, mes 2 sœurs sont plus âgées que moi, ma sœur aînée a 24 ans, son nom est joyce,
+                    elle étudie à l'Université de Tel Aviv et produit en même temps des événements. Ma sœur cadette, Salomé, étudie l'architecture à Shankar Engineering.
+                    Mes sœurs sont très talentueuses et je les aime beaucoup. Le nom de mon père est Eric Sabag, un architecte très connu de la population française en Israël,
+                    moi et lui sommes très proches et adorons être ensemble en tant que meilleurs amis. Ma mère l'appelle Ruth, 
+                    une femme très talentueuse, travaille à la production d'événements dignes et aide mon père avec les documents et les clients dans son bureau, 
+                    et si elle le fait, elle peut également organiser la maison et devenir une maman chaleureuse et préparer des plats très savoureux.</p>
+                </div>
+                <div class="card">
+                    <h2>More about Me</h2>
+                    <h4>My Personal Life</h4>
+                    <img class="img-corona-time" src="corona-time.JPG" />
+                    <p>jaime sortir avec des amis, prendre l'avion pour Eilat et à l'étranger avec ma famille,  acheter de nouveaux vêtements ou simplement me faire plaisir dans un hôtel le week-end. Je fréquente une école religieuse située sur le boulevard Rothschild à Tel Aviv, un endroit formidable mais je n'ai pas le temps de me promener trop après l'école parce que l'école est fatiguénte après de longues journées.</p>
+                  
+                </div>
+            </div>
+
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <h5>Tel Aviv Ramat-Aviv , August 2019 </h5>
+                    <img class="img-Me" src="meni1.JPG"  >
+                    <p>Salut, Je suis  Mendel sabbagh , jai 16 Ans . Jadore la vie ! <br />   Je suis né en France, avec des racines marocaines, mais je sais comment être un gosse israélien en cas de besoin.
+</div>
+                <div class="card">
+                    <h2>Popular Post</h2>
+                    <h5>Cliquez ! pour voir plus de photos</h5>
+                    <img id ="img-Me" src="Mer.JPG" onclick="changeImage()" />
+
+                </div>
+                <div class="contact">
+                    <h3>Find me on :</h3>
+                   
+                    <h4>
+                        Phone number:0525972238
+                        <br>Mail:mendel.sabb27@gmail.com
+                    </h4>
+
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr1" />
+
+    </body>
+      </html>

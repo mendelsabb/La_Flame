@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/178629f1f7.js"
+            crossorigin="anonymous"></script>
+    <title>Register</title>
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+       
+        * {
+            font-family: Bahnschrift;
+        }
+
+        header {
+            background-color: #b5bc9a;
+            padding: 40px;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+            font-family: Arial;
+            font-size: 30px;
+        }
+
+        form {
+            position: absolute;
+            top: 25%;
+            left: 39%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e0e0e0;
+            width: 19%;
+            height: 40%;
+        }
+
+        .input {
+            width: 91%;
+            padding: 4%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e0e0e0;
+            margin-top: 8px;
+            border-radius: 2px;
+            font-size: 15px;
+        }
+
+        .password {
+            width: 91%;
+            padding: 4%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e0e0e0;
+            margin-top: 8px;
+            border-radius: 2px;
+            font-size: 15px;
+        }
+
+        .submit {
+            background-color: #b5bc9a;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            border-radius: 4px;
+            padding: 17px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+     
+    </style>
+    <script>
+       
+    </script>
+    <script>
+        function check(event) {
+            //check if the input fields are filled ok
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var number = document.getElementById("number").value;
+            var x = document.getElementById("myInput");
+
+
+            if (fname.length < 2 && lname.length < 2 && number.length != 10) {
+                alert("First name and Last Name and Phone number - Not OK");
+                event.preventDefault()
+                return false;
+            }
+            else if (fname.length < 2 && number.length != 10) {
+                alert("First name and Phone number - Not OK");
+                event.preventDefault()
+                return false;
+            }
+            else if (lname.length < 2 && number.length != 10) {
+                alert("Last name and Phone number - Not OK");
+                event.preventDefault()
+                return false;
+            }
+            else if (number.length != 10) {
+                alert("Phone number - Not OK");
+                event.preventDefault()
+                return false;
+            }
+            else if (fname.length < 2 && lname.length < 2) {
+                alert("First name and last name  - Not OK");
+                event.preventDefault()
+                return false;
+            }
+            else if (fname.length < 2) {
+                alert("First name  - Not OK");
+                event.preventDefault()
+                return false;
+            }
+            else if (lname.length < 2) {
+                alert("Last name - Not OK");
+                event.preventDefault()
+                return false;
+            }
+
+            else {
+                alert("You have been registerd !");
+                return true;
+            }
+
+        }
+
+        function myFunction(x) {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+
+
+
+
+        }
+    </script>
+
+
+</head>
+<body>
+   
+
+    <header>Sign up to be  Cactus Jack Membership</header>
+    <form id="form1" action="style.html1.html" target="_blank" method="get" onsubmit="check();">
+
+        <input class="input" placeholder="Last Name" type="text" id="lname" name="Lname">
+        <br>
+        <input class="input" placeholder="First Name" type="text" id="fname" name="Fname">
+        <br>
+        <input class="input" placeholder="Phone Number" type="number" id="number" name="Num">
+        <br />
+
+        <input class="password" placeholder="Password" type="password" id="myInput" name="Pas"> <i class="fas fa-eye-slash" onclick="myFunction()"></i>
+        <br />
+        <p> At least 5 characters </p>
+        <br>
+        <br>
+        <input class="input submit" type="submit" value="Sign in" />
+    </form>
+
+
+
+</body>
+</html>

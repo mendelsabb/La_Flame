@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/178629f1f7.js"
+            crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://i.redd.it/t9a8j2f9xyl31.png">
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <title>cactus jack</title>
+
+    <script>
+        function setParamsFromGet() {
+            //Get the parms from the url and set them in the document
+            parms = new URLSearchParams(location.search);
+            var L = parms.get("Lname");
+            var F = parms.get("Fname");
+            var N = parms.get("Num");
+            var LastN = document.getElementById("lastName");
+            var FirstN = document.getElementById("firstName");
+            LastN.innerHTML = L;
+            FirstN.innerHTML = F;
+            alert("welcome" + " " + F + " " + L +
+                ".                                                                               Your Phone Number: " + N + " as been registered . Thank you")
+        }</script>
+
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/936331.jpg");
+            margin: 0;
+        }
+
+        .header {
+            background: linear-gradient(to right, #523012, #3d1d02);
+            padding: 15px;
+            color: pink;
+            font: italic 200% fantasy;
+            font-size: 45px;
+            text-shadow: 4px 4px 4px black;
+            text-align: center;
+        }
+
+            .header h1 {
+                font-size: 90px;
+            }
+
+        .a-icon {
+            text-decoration: none;
+        }
+
+        .img1 {
+            position: absolute;
+            left: 2%;
+            top: 8px;
+            width: 370px;
+            height: 250px;
+        }
+
+        .img2 {
+            position: absolute;
+            right: 805px;
+            top: 7%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .img3 {
+            position: absolute;
+            right: 1110px;
+            top: 7%;
+            width: 30px;
+            height: 30px;
+        }
+       
+        .a-about-the-creator {
+            color: white;
+            position: absolute;
+            top: 96%;
+            left: 42%;
+            font-size: 25px;
+            text-decoration: none;
+            font-family: 'Comic Sans MS';
+        }
+
+            .a-about-the-creator:hover {
+                text-shadow: 2px 2px black;
+                text-shadow: 1px 1px lightpink;
+            }
+
+        .p1 {
+            position: absolute;
+            top: 62%;
+            left: 40%;
+            font-size:37px;
+            color:lightpink;
+            font-family: 'Comic Sans MS';
+        }
+          .icon-1{width:8%;}
+            .icon-1:hover{-ms-transform: scale(1.4); /* IE 9 */
+        -webkit-transform: scale(1.4); /* Safari 3-8 */
+        transform: scale(1.4);}
+            .contact {
+             float:left;
+             position:absolute;left:40%;top:80%;
+             margin-left: 2%;
+}
+    </style>
+
+</head>
+<body onload="setParamsFromGet()">
+
+    <div class="header"> <h1>SCOTT`S WORLD</h1> </div>
+    <p class="p1"><b>Welcome !</b> <span id="lastName"></span> <span id="firstName"></span> </p>
+
+    <div class="div-time">
+        <p id="demo"></p>
+        <p id="date"></p>
+    </div>
+
+    <script>
+
+        var d = new Date();
+        var Minutes = d.getMinutes();
+        if (Minutes < 10 && Minutes >= 0) { document.getElementById("demo").innerHTML = d.getHours() + ":0" + Minutes; }
+        else { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes; }
+        var hour = d.getHours();
+        if (hour > 0 && hour < 12) { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " AM"; }
+        else { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " PM"; }
+
+    </script>
+
+    <script>
+        var d = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.getElementById("date").innerHTML = d.getDate() + "-" + months[d.getMonth()] + "-" + d.getFullYear();
+    </script>
+
+    <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cactus_Jack_Records_-_Logo.svg/960px-Cactus_Jack_Records_-_Logo.svg.png" />
+    <img class="img2" src="https://i.ya-webdesign.com/images/cartoon-cactus-png-2.png" />
+    <img class="img3" src="https://i.ya-webdesign.com/images/cartoon-cactus-png-2.png" />
+
+
+    <a class="a-about-the-creator" href="aboutmepage.htmlmendel.html"> Creator:@mendelsabb</a>
+
+    <div class="contact">
+        
+        <a href="https://www.facebook.com/travisscottlaflame/">
+            <img class="icon-1" src="https://radiodejesus.com/site/wp-content/uploads/2016/10/logo-facebook-365x365.png">
+        </a>
+        <a href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
+            <img class="icon-1" src="https://www.shareicon.net/data/512x512/2015/09/04/95565_yt_512x512.png">
+        </a>
+        <a href="https://twitter.com/trvisxx?lang=fr">
+            <img class="icon-1" src="https://cdn.clipart.email/5a0ac3a85dd6f2f41470090109508a66_twitter-logo-png-images-free-download_512-512.png">
+        </a>
+    </div>
+
+    <ul>
+        <li><a class="active" href=""><i class="fa fa-fw fa-home"></i>HOME</a></li>
+        <li><a href="Albums-t.html"><i class="fas fa-compact-disc icon"></i>  ALBUMS</a></li>
+        <li><a href="Sneakers.htmlSneakers.html"><i class="fas fa-shoe-prints icon"></i>  SNEAKERS</a></li>
+        <li><a href="HTMLTravisScottSweetWear.html"><i class="fas fa-tshirt icon"></i>  STREETWEAR & COLLECTIBELS</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="drop">ABOUT</a>
+            <div class="dropdown-content">
+                <a href="aboutmepage.htmlmendel.html">Mendel.s</a>
+                <a href="Travisscott.html">Travis.s</a>
+
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
+

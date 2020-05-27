@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/178629f1f7.js"
+            crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="https://i.redd.it/t9a8j2f9xyl31.png">
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="StyleSheet-galery.css" />
+    <title>Streetwear & collectibels</title>
+    <style>
+        body {
+            background-color: white;
+            background-image: url("");
+            background-size: cover;
+            margin: 0;
+        }     
+        .header {
+            background: linear-gradient(to right,#ffdde1, #dd96b3 );
+            color: #4d2600;
+            padding: 110px;
+        }            
+        div.gallery {
+            margin-top: 5%;          
+            float: left;
+            width: 215px;
+            margin-left: 2%;
+            color: black;
+            font-size: 15px;
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.10);
+        }
+            div.gallery:hover {
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.23);
+            }
+            div.gallery img {
+                width: 200px;
+                height: 160px;
+                margin-top: 10px;
+            }
+        div.desc {
+            font-family: Arial;
+            background-color: #fafafa;
+        }
+        span {
+            font-size: 20px;
+            text-align: center;
+        }
+        div.absolute {
+            position: absolute;
+            top: 80%;
+            right: 8%;
+            width: 1400px;
+            height: 800px;
+        }
+        h2 {         
+            top: 77%;
+            right: 27%;          
+        }
+
+       
+    </style>
+</head>
+<body>
+    <a href="style.html1.html">
+        <img class="imghome" src="https://i.redd.it/9qy2caqij6m31.png">
+    </a>
+
+    <div class="div-time">
+        <p id="demo"></p>
+        <p id="date"></p>
+    </div>
+    <script>
+
+         var d = new Date();
+        var Minutes = d.getMinutes();
+        if (Minutes < 10 && Minutes >= 0) { document.getElementById("demo").innerHTML = d.getHours() + ":0" + Minutes; }
+        else { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes; }
+         var hour = d.getHours();
+            if (hour > 0 && hour < 12) { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " AM"; }
+            else {document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " PM";}
+
+    </script>
+    <script>
+        var d = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.getElementById("date").innerHTML = d.getDate() + "-" + months[d.getMonth()] + "-" + d.getFullYear();
+    </script>
+
+    <div class="header"> <h1>SCOTT`S <br>streetwear&collectibels</h1> </div>
+    <ul>
+        <li><a href="style.html1.html"><i class="fa fa-fw fa-home icon"></i>    HOME</a></li>
+        <li><a href="Albums-t.html"><i class="fas fa-compact-disc icon"></i>    ALBUMS</a></li>
+        <li><a href="Sneakers.htmlSneakers.html"><i class="fas fa-shoe-prints icon"></i>  SNEAKERS</a></li>
+        <li><a class="active" href=""> <i class="fas fa-tshirt icon"></i>  STREETWEAR & COLLECTIBELS</a></li>
+    </ul>
+
+
+    <div class="div-absolute">
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-jordan-cactus-jack-highest-t-shirt-brown">
+                <img src="https://static.wixstatic.com/media/1b1c5e_2e668d64553f4eee81cafe36780c1013~mv2.jpeg/v1/fill/w_840,h_600,al_c,lg_1,q_85/1b1c5e_2e668d64553f4eee81cafe36780c1013~mv2.jpeg">
+            </a>
+            <div class="div-desc">Travis scott Jordan Cactus Jack<br>Highest T Shirt Brown<br><br>price:<br><br><b><span>$70 +</span></b></div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-cactus-jack-airbrush-hoodie-black">
+                <img src="https://stockx.imgix.net/products/streetwear/Travis-Scott-Cactus-Jack-Airbrush-Hoodie-Black.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1571160445">
+            </a>
+            <div class="div-desc">Travis Scott Cactus Jack <br>AirBrush Hodie Black<br><br>price:<br><br><b><span>$300 +</span></b></div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-astroworld-hoodie-black">
+                <img  src="https://stockx.imgix.net/products/streetwear/Travis-Scott-Astroworld-Hoodie-Black-2.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1542407701">
+            </a>
+            <div class="div-desc">Travis Scott Astroworld <br />Scattered Hoodie Black<br><br>price:<br><br><b><span>$300 +</span></b></div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-mj-track-pant-palomino">
+                <img src="https://stockx.imgix.net/products/streetwear/Travis-Scott-MJ-Track-Pant-Palomino.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1556727474">
+            </a>
+            <div class="div-desc">Travis Scott MJ<br /> Track Pant Palomino<br><br />price:<br><br><b><span>$200 +</span></b></div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-x-virgil-abloh-by-a-thread-tee-white">
+                <img src="https://stockx.imgix.net/products/streetwear/Travis-Scott-x-Virgil-Abloh-By-A-Thread-Tee-White.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1542670869">
+            </a>
+            <div class="div-desc">
+                Travis Scott x Virgil Abloh <br /> A Thread Tee
+                <br><br>price:<br><br><b><span>$250 +</span></b>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-reeses-puffs-bowl-multi">
+                <img src="https://stockx.imgix.net/products/streetwear/Travis-Scott-Reeses-Puffs-Bowl-Multi.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1561521606">
+            </a>
+            <div class="div-desc">
+                Travis Scott <br />Reese's Puffs Bowl Multi
+                <br><br>price:<br><br><b><span>$70 +</span></b>
+            </div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-reeses-puffs-spoon-silver">
+                <img src="https://stockx.imgix.net/products/collectibles/Travis-Scott-Reeses-Puffs-Spoon-Silver.jpg?fit=fill&bg=FFFFFF&w=140&h=100&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1570202152">
+            </a>
+            <div class="div-desc">
+                Travis Scott Reese's<br /> Puffs Spoon Silver
+                <br><br>price:<br><br><b><span>$70 +</span></b>
+            </div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-x-nike-basketball-black-multi">
+                <img class="" src="https://stockx.imgix.net/products/collectibles/Travis-Scott-x-Nike-Basketball-Black-Multi.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1585774896">
+            </a>
+            <div class="div-desc">
+                Travis Scott x Nike Basketball<br /> Black Multi
+                <br><br>price:<br><br><b><span>$250 +</span></b>
+            </div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-action-figure-multi">
+                <img src="https://stockx.imgix.net/products/streetwear/Travis-Scott-Action-Figure-Multi.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1556727474">
+            </a>
+            <div class="div-desc">
+                Travis Scott<br /> Action Figure Multi
+                <br><br>price:<br><br><b><span>$800 +</span></b>
+            </div>
+        </div>
+
+        <div class="div-gallery">
+            <a target="_blank" href="https://stockx.com/travis-scott-highest-in-the-room-cj-aj-vinyl-multi">
+                <img src="https://stockx.imgix.net/products/collectibles/Travis-Scott-Highest-In-The-Room-CJ-AJ-Vinyl-Multi.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1571163571">
+            </a>
+            <div class="div-desc">
+                Travis Scott Highest In The Room
+                <br><br>price:<br><br><b><span>$100 +</span></b>
+            </div>
+        </div>
+    </div>
+
+    <h2>Click tu purchase  travis scott stuff on stock x</h2>
+    <p class="p1">in colaboration with: </p>
+    <hr />
+    <a href="https://stockx.com/">
+        <img class="imgstockx" src="https://seekvectorlogo.net/wp-content/uploads/2019/06/stockx-vector-logo.png" />
+    </a>
+    
+</body>
+</html>

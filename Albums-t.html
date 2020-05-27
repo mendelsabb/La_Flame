@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/178629f1f7.js"
+            crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://i.redd.it/t9a8j2f9xyl31.png">
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <title> Albums </title>
+    <style>
+        body {
+            background-image: url("https://i.redd.it/rxycy2bnl7121.png");
+            background-size: cover;
+            margin: 0;
+        }
+
+        h1 {
+            color: pink;
+            font: italic 200% fantasy;
+            font-size: 70px;
+            text-shadow: 4px 4px black;
+            position: absolute;
+            top: 80px;
+            left: 700px;
+        }
+
+        ul {
+            margin-top: 261px;
+        }
+
+        .div-abso {
+            position: absolute;
+            top: 45%;
+            right: 9%;           
+            width: 1400px;
+            height: 900px;
+            
+        }
+
+        div.gallery {
+            margin-left: 50px;
+            float: left;
+            width: 250px;
+            margin-top: 2%;
+        }
+
+            div.gallery:hover {
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 0px;
+            text-align:center;
+            font-family: 'Tempus Sans ITC';
+            text-decoration: none;
+            width: 250px;
+           
+            margin-bottom: 0;
+            
+        }
+
+        
+
+        .span1 {
+            color: yellow;
+        }
+
+        .span2 {
+            color: red;
+        }
+
+        .span3 {
+            color: white
+        }
+
+        .span4 {
+            color: blue
+        }
+
+        .span5 {
+            color: forestgreen
+        }
+
+        .span6 {
+            color: lightpink
+        }
+
+        .span7 {
+            color: green
+        }
+
+        .span8 {
+            color: orange
+        }
+
+        .span9 {
+            color: pink
+        }
+
+        .span10 {
+            color: white
+        }
+
+        .astro{
+            font-size:35px;
+        }
+
+        .OWL-PHARAOH {
+           color:orangered;
+            font-size: 33px;
+           
+        }
+
+        .Days-Before-Rodeo {
+            color: #4b9cde;
+          
+            font-size: 30px;
+           
+        }
+
+        .Rodeo {
+            color: #d27f46;
+         
+            font-size: 35px;
+          
+        }
+
+        .Days-Before-Birds {
+            color: #c59a6d;
+           
+            font-size: 35px;
+          
+        }
+        .Birds{
+            color: rebeccapurple;
+           
+            font-size: 35px;
+           
+        }
+         .Boys{
+            color: greenyellow;
+            
+            font-size: 35px;
+           
+        }
+         .Flame{
+            color: #c03634;
+           
+            font-size: 35px;
+          
+        }
+         img:hover{-ms-transform: scale(0.9); /* IE 9 */
+        -webkit-transform: scale(0.9); /* Safari 3-8 */
+        transform: scale(0.9);}
+            .contact {
+             float:left;
+             position:absolute;left:40%;top:80%;
+             margin-left: 2%;
+}
+         .img1:hover{filter: drop-shadow(4px 5px 2px yellow)}
+         .img2:hover{filter: drop-shadow(4px 5px 2px red)}
+         .img3:hover{filter: drop-shadow(4px 5px 2px #4b9cde)}
+         .img4:hover{filter: drop-shadow(4px 5px 2px #d27f46)}
+         .img5:hover{filter: drop-shadow(4px 5px 2px #c59a6d)}
+         .img6:hover{filter: drop-shadow(4px 5px 2px rebeccapurple)}
+         .img7:hover{filter: drop-shadow(4px 5px 2px greenyellow)}
+         .img8:hover{filter: drop-shadow(4px 5px 2px #c03634)}
+
+         #customers {position:absolute;left:20%;top:140%;
+         font-family: 'Comic Sans MS';
+         border-collapse: collapse;
+         width: 60%;
+         box-shadow: 1px 2px 3px white;
+          }
+
+          #customers td, #customers th {
+           border: 1px solid #ddd;
+           padding: 8px;
+           }
+
+          #customers tr:nth-child(even){background-color: #654ea3;}
+          #customers tr:nth-child(odd){background-color: rebeccapurple;}
+          #customers tr:hover {background-color: #ddd;}
+
+          #customers th {
+           padding-top: 10px;
+           padding-bottom: 10px;
+           text-align: left;
+           background-color:black;
+           color: white;
+           }
+          hr { 
+           display: block;
+           margin-top: 47%;
+           margin-left: auto;
+           margin-right: auto;
+           border-style: inset;
+           border-width: 1px;
+           width:70%;
+           } 
+          .hr1 { 
+           display: block;
+           margin-top: 55%;
+           margin-left: auto;
+           margin-right: auto;
+           border-style: inset;
+           border-width: 1px;
+           width:70%;
+           } 
+    </style>
+</head>
+<body>
+
+    <a href="style.html1.html">
+        <img class="imghome" src="https://i.redd.it/9qy2caqij6m31.png">
+    </a>
+
+    <h1>SCOTT`S ALBUMS</h1>
+
+    <div class="div-time">
+        <p id="demo"></p>
+        <p id="date"></p>
+    </div>
+    <script>
+
+        var d = new Date();
+         var Minutes = d.getMinutes();
+        if (Minutes < 10 && Minutes >= 0) { document.getElementById("demo").innerHTML = d.getHours() + ":0" + Minutes; }
+            else { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes; }
+            var hour = d.getHours();
+            if (hour > 0 && hour < 12) { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " AM"; }
+            else {document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " PM";}
+
+    </script>
+    <script>
+        var d = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.getElementById("date").innerHTML = d.getDate() + "-" + months[d.getMonth()] + "-" + d.getFullYear();
+    </script>
+
+    <ul>
+        <li><a href="style.html1.html"><i class="fa fa-fw fa-home"></i>  HOME</a></li>        
+        <li><a class="active" href="Albums-t.html"><i class="fas fa-compact-disc icon"></i>  ALBUMS</a></li>
+        <li><a href="Sneakers.htmlSneakers.html"><i class="fas fa-shoe-prints icon"></i>  SNEAKERS</a></li>
+        <li><a href="HTMLTravisScottSweetWear.html"> <i class="fas fa-tshirt icon"></i>  STREETWEAR & COLLECTIBELS</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="drop">ABOUT</a>
+            <div class="dropdown-content">
+                <a href="aboutmepage.htmlmendel.html">Mendel.s</a>
+                <a href="Travisscott.html">Travis.s</a>
+
+            </div>
+        </li>
+    </ul>
+
+    <div class="div-abso">
+        <div class="gallery">
+            <div class="astro desc">
+                <span class="span1">A</span><span class="span2">S</span><span class="span3">T</span><span class="span4">R</span><span class="span5">O</span>
+                <span class="span6">W</span><span class="span7">O</span><span class="span8">R</span><span class="span9">L</span><span class="span10">D</span>
+            </div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=2a8PgqWrc_4&list=PL9tY0BWXOZFvdeHbEJr7Wiztcue35IStT">
+                <img class="img1" src="https://daddykool.com/Photo/418459519694:500">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <div class="OWL-PHARAOH desc">OWL PHARAOH </div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=yK8QSfkcPjM&list=PLrNIBOhiKUqA4lvfnLR5DEg4szPQfM_hL">
+                <img class="img2" src=" https://e.snmc.io/i/600/w/53a0a78f11509f4d663aae6c431c0397/4785020">
+            </a>
+
+        </div>
+
+        <div class="gallery">
+            <div class="desc Days-Before-Rodeo">Days Before Rodeo</div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=DcbAuoqIf1o&list=PLN2gEUOWu_KkGbYWZgr1qBQky4929YSGO">
+                <img class="img3" src="https://e.snmc.io/i/600/w/1c340f8b09b7ceeaf80da74129287ca5/5375639">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <div class="desc Rodeo">RODEO</div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=adnjokd1ErM&list=PL0robqC73dMSrjLY-xbiQzYGv5Mq4h2l5">
+                <img class="img4" src="https://i1.wp.com/mphiphop.com/wp-content/uploads/2020/04/Travis-Scott-Rodeo-Deluxe.jpg?fit=500%2C500&ssl=1">
+            </a>
+        </div>
+
+
+        <div class="gallery">
+            <div class="desc Days-Before-Birds">Days Before Birds</div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=aH0fWLfG-QU&list=PL7MKB98hjEAuYFRzxDpcZEn96igoTcmcW">
+                <img class="img5" src="https://i1.sndcdn.com/artworks-000470443923-smtt2k-t500x500.jpg">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <div class="desc Birds">Birds in the trap</div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=hF1sqWiqppE&list=PLY6gDeHQ2ViXVGoWx9txUcWbXF_PK63MK">
+                <img class="img6" src="https://thehighendtheoryofhiphop.files.wordpress.com/2016/09/birds_in_the_trap_sing_mcknight.jpg?w=500&h=500">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <div class="desc Boys">JackBoys</div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=VKAcYC4KXvU&list=PLPRWtKgY2MOv1A6HssogKYrf2y7OKXKUM">
+                <img class="img7" src="https://m.media-amazon.com/images/I/81HjSc2dqxL._SS500_.jpg">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <div class="desc Flame">La Flame</div>
+            <a target="_blank" href="https://www.youtube.com/watch?v=SuJzGhmBUIE&list=PLjQMysfpxQoRx00mLiTDx-AVXuJ7tVLQJ">
+                <img class="img8" src="https://2hothiphop.com/wp-content/uploads/2016/06/Travis_Scott_La_Flame_Travis_Scott2HotHipHop.com_-500x500.jpg">
+            </a>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <table id="customers">
+        <tr>
+            <th>ALBUM</th>
+            <th>Released</th>
+            <th>Sales</th>
+        </tr>
+        <tr>
+            <td>Astroworld</td>
+            <td>out 3, 2018</td>
+            <td>537,000</td>
+        </tr>
+        <tr>
+            <td>Owl pharaoh</td>
+            <td> May 21, 2013</td>
+            <td>327,000</td>
+        </tr>
+        <tr>
+            <td>Days Before Rodeo</td>
+            <td>August 18, 2014</td>
+            <td>350,000</td>
+        </tr>
+        <tr>
+            <td>Rodeo</td>
+            <td>September 4, 2015</td>
+            <td>355,000</td>
+        </tr>
+        <tr>
+            <td>Days before birds in the trap</td>
+            <td>october 14, 2016</td>
+            <td>325,000</td>
+        </tr>
+        <tr>
+            <td>Birds in the trap</td>
+            <td>September 2, 2016</td>
+            <td>450,000</td>
+        </tr>
+        <tr>
+            <td>Jackboys</td>
+            <td>December 27, 2019</td>
+            <td>375,000</td>
+        </tr>
+        <tr>
+            <td>La Flame</td>
+            <td>september 15, 2016</td>
+            <td>245,000</td>
+        </tr>
+        </table>
+      <hr class="hr1">
+
+</body>
+</html>

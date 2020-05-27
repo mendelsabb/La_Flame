@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/178629f1f7.js"
+            crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://i.redd.it/t9a8j2f9xyl31.png">
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="StyleSheet-about.css" />
+    <title>Travi$_scott</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+
+        .header {
+            background: linear-gradient(to right, #000000, #434343);
+            
+        }
+
+        ul {
+            background: linear-gradient(to right, #ADA996, #F2F2F2,#DBDBDB,#EAEAEA);
+        }
+
+
+        .ul-o {
+            font-size: 15px;
+        }
+
+
+
+        #dark {
+            position: absolute;
+            right: 3%;
+            top: 17%;
+            width: 2%;
+        }
+
+            #dark:hover {
+                cursor: pointer;
+            }
+             .icon-1{width:8%;position:relative;left:40%;top:10%;}
+            .icon-1:hover{-ms-transform: scale(1.4); /* IE 9 */
+        -webkit-transform: scale(1.4); /* Safari 3-8 */
+        transform: scale(1.4);}
+ 
+    </style>
+    <script>
+        function changeImage() {
+            var img = document.getElementById("img-Me");
+
+            if (img.src.match("t.s.p.JPG")) {
+                img.src = "t.s.p.p.JPG";
+            } else {
+                img.src = "t.s.p.JPG";
+            }
+        }
+
+    </script>
+
+         <script>
+
+        function changefamily() {
+            var img = document.getElementById("img-Family");
+
+            if (img.src.match("https://s.yimg.com/ny/api/res/1.2/6uoryTsFb16U_vNC2NOxwA--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/etonline.tv/300fa6fe4a64e505378bab6994397604")) {
+                img.src = "https://i.iheart.com/v3/re/new_assets/5da5d28c1b608a220b053e4b?ops=contain(740,0)";
+            } else {
+                img.src = "https://s.yimg.com/ny/api/res/1.2/6uoryTsFb16U_vNC2NOxwA--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/etonline.tv/300fa6fe4a64e505378bab6994397604";
+            }
+        }
+       
+
+    </script>
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("header");
+            
+        }
+    </script>
+</head>
+<body>
+    <img src="https://cdn1.iconfinder.com/data/icons/user-interface-16x16-vol-1/16/contrast-circle-512.png" id="dark" onclick="myFunction()" />
+
+
+
+    <div class="header">
+        <h1>JACK WORLD</h1>
+
+    </div>
+
+    <div class="div-time">
+        <p id="demo"></p>
+        <p id="date"></p>
+    </div>
+    <script>
+
+        var d = new Date();
+        var Minutes = d.getMinutes();
+        if (Minutes < 10 && Minutes >= 0) { document.getElementById("demo").innerHTML = d.getHours() + ":0" + Minutes; }
+        else { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes; }
+        var hour = d.getHours();
+        if (hour > 0 && hour < 12) { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " AM"; }
+        else { document.getElementById("demo").innerHTML = d.getHours() + ":" + Minutes + " PM"; }
+    </script>
+    <script>
+        var d = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.getElementById("date").innerHTML = d.getDate() + "-" + months[d.getMonth()] + "-" + d.getFullYear();
+    </script>
+
+    <ul>
+        <li><a href="style.html1.html"><i class="fa fa-fw fa-home"></i>  HOME</a></li>
+        <li><a href="Albums-t.html"><i class="fas fa-compact-disc icon"></i>  ALBUMS</a></li>
+        <li><a href="Sneakers.htmlSneakers.html"><i class="fas fa-shoe-prints icon"></i>  SNEAKERS</a></li>
+        <li><a href="HTMLTravisScottSweetWear.html"><i class="fas fa-tshirt icon"></i>  STREETWEAR & COLLECTIBELS</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="drop">ABOUT</a>
+            <div class="dropdown-content">
+                <a  href="aboutmepage.htmlmendel.html">Mendel.s</a>
+                <a class="active" href="">Travis.s</a>
+
+            </div>
+    </ul>
+
+
+
+    <div>
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Webster Family</h2>
+                <h5>April 2017</h5>
+                <img id="img-Family"  src="https://s.yimg.com/ny/api/res/1.2/6uoryTsFb16U_vNC2NOxwA--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/etonline.tv/300fa6fe4a64e505378bab6994397604"  onmouseover="changefamily()" >
+                <p>Voici La famile deux Travis.</p>
+                <p>
+                    Depuis avril 2017, il partage la vie de Kylie Jenner , rencontrée au Coachella Festival21.
+
+                    Il devient père22 d'une petite fille prénommée Stormi née le 1er février 2018/23.
+
+                    Après s'être séparés en octobre 2019 selon TMZ, les médias annoncent leur reconciliation en mars 2020/24.
+                </p>
+            </div>
+            <div class="card">
+                <h2>More about Jack</h2>
+                <h4>His Personal Life , how he started</h4>
+                <img class="img-corona-time" src="https://i.pinimg.com/originals/08/c1/49/08c14906f3cf28e0c51117863cac9b8a.jpg" />
+                <p>
+                    Jacques Webster est né le 30 avril 1992 à Houston, au Texas, et a grandi à Missouri City, une banlieue au sud-ouest de Houston.
+                    Issu d'une fratrie de quatre enfants, il a un grand frère autiste, qui est son mentor, et un frère et une sœur plus jeunes.
+                    Il étudie à l'Elkins High School de Missouri City. Scott restait habituellement avec sa grand-mère,
+                    tandis que sa mère travaillait en tant que vendeuse chez AT&T2 et son père dirigeait ses propres affaires.
+                    Scott étudie à l'Université du Texas à Austin et à l'Université du Texas à San Antonio avant d'abandonner ses études3.
+                    Son nom d’artiste vient du prénom de son oncle Travis et de sa passion pour Kid Cudi, de son vrai nom Scott Mescudi.
+                    Scott se lance dans la production de beats, et collabore pour la première fois avec Chris Holloway pour former un groupe nommé The Graduates1.
+                    En 2009, ils publient leur premier EP sur MySpace1. En 2010, ils forment un duo avec OG Chess, nommé The Classmates1. En 2011,
+                    ils publient deux projets, l'un intitulé Buddy Rich, et l'autre Cruis'n USA, avec Scott à la production. Après des divergences musicales et différences personnelles,
+                    OG Chess et Scott se séparent. Scott emménage à Los Angeles après avoir abandonné ses études. Avec l'aide de son ami Mike Waxx, directeur du site Illroots,
+                    se lance dans l'enregistrement à la publication musicale. Le rappeur T.I., impressionné par la chanson Lights (Love Sick) de Scott,
+                    contacte ce dernier pour lui proposer de venir en studio. T.I. effectue un freestyle sur la chanson Animal de Scott.
+                    Le 13 mai 2017, il est arrêté à Rogers dans l'Arkansas après avoir donné un concert pour incitation à l’émeute, mise en danger de la sécurité d'un mineur et conduite inappropriée, il est libéré le lendemain matin sans aucune caution à payer.
+                    Le 31 octobre 2017, un fan nommé Kyle Green qui s'est blessé en sautant du balcon poussé par la foule lors d'un concert du rappeur au Terminal 5 de New York, 
+                    attaque le rappeur et son équipe en justice pour incitation à l’émeute
+                </p>
+
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Jack</h2>
+                <h5>In Show </h5>
+                <img class="img-Me" src="https://media1.tenor.com/images/68d2fe1d446e1fa43a0b9b316e3ea592/tenor.gif?itemid=16241806">
+                <p>Travis Scott, parfois stylisé Travi$ Scott, de son vrai nom Jacques Berman Webster II, né le 30 avril 1992 à Houston, dans l'État du Texas,
+                aux États-Unis, est un rappeur, chanteur, producteur, musicien, acteur, mannequin et réalisateur américain.</p>
+</div>
+            <div class="card">
+                <h2>Popular Post</h2>
+                <h5>Cliquez ! pour voir plus de photos</h5>
+                <img id="img-Me" src="t.s.p.JPG" onclick="changeImage()" />
+
+            </div>
+            <div class="contact">
+                <h3>Find him on :</h3>
+
+
+             
+                    <a  href="https://www.facebook.com/travisscottlaflame/">
+                        <img class="icon-1" src="https://radiodejesus.com/site/wp-content/uploads/2016/10/logo-facebook-365x365.png">
+                    </a>
+                    <a  href="https://www.youtube.com/channel/UCtxdfwb9wfkoGocVUAJ-Bmg">
+                        <img class="icon-1" src="https://www.shareicon.net/data/512x512/2015/09/04/95565_yt_512x512.png">
+                    </a>
+                    <a  href="https://twitter.com/trvisxx?lang=fr">
+                        <img class="icon-1" src="https://cdn.clipart.email/5a0ac3a85dd6f2f41470090109508a66_twitter-logo-png-images-free-download_512-512.png">
+                    </a>
+
+              
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr1" />
+
+</body>
+</html>
