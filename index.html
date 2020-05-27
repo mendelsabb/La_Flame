@@ -9,20 +9,7 @@
     <link rel="stylesheet" href="StyleSheet1.css" />
     <title>cactus jack</title>
 
-    <script>
-        function setParamsFromGet() {
-            //Get the parms from the url and set them in the document
-            parms = new URLSearchParams(location.search);
-            var L = parms.get("Lname");
-            var F = parms.get("Fname");
-            var N = parms.get("Num");
-            var LastN = document.getElementById("lastName");
-            var FirstN = document.getElementById("firstName");
-            LastN.innerHTML = L;
-            FirstN.innerHTML = F;
-            alert("welcome" + " " + F + " " + L +
-                ".                                                                               Your Phone Number: " + N + " as been registered . Thank you")
-        }</script>
+    
 
     <style>
         body {
@@ -110,7 +97,7 @@
 <body onload="setParamsFromGet()">
 
     <div class="header"> <h1>SCOTT`S WORLD</h1> </div>
-    <p class="p1"><b>Welcome !</b> <span id="lastName"></span> <span id="firstName"></span> </p>
+   
 
     <div class="div-time">
         <p id="demo"></p>
